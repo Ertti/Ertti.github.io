@@ -1,0 +1,134 @@
+@font-face {
+    font-family: 'osreg';
+    src: url('../fonts/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+.anim {
+    -moz-transition: all 0.2s 0.02s ease;
+    -o-transition: all 0.2s 0.02s ease;
+    -webkit-transition: all 0.2s 0.02s ease;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button,
+a {
+    .anim;
+}
+.osreg {
+    font-family: 'osreg';
+}
+
+input:focus {
+    outline: none;
+}
+
+a:link,
+a:target,
+a:focus,
+a:active {
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    .osreg;
+    color: @color3;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+h1 {
+    font-weight: bold;
+    font-size: 42px;
+}
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+input {
+    height: 40px;
+    border: 1px solid #ccc;
+    padding: 5px 15px;
+}
+
+@color1: #e00f0f;
+@color2: #161616;
+@color3: #333333;
+
+.wraper {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    &__logo {
+        flex: 100%;
+        img {
+            max-width: 63px;
+        }
+        padding-left: 55px;
+    }
+    &__time {
+        text-align: center;
+        flex: 100%;
+        p {
+            font-size: 14px;
+            span {
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+            }
+        }
+    }
+    &__num {
+        text-align: right;
+        flex: 100%;
+        padding-right: 55px;
+        p {
+            font-size: 14px;
+            a {
+                font-size: 16px;
+                font-weight: bold;
+                color: #333;
+                &:hover {
+                    color: #666;
+                }
+            }
+        }
+    }
+}
+.main {
+    &__text {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1200px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        p {
+            text-align: justify;
+            font-size: 16px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-wrap: wrap;
+        &__logo {
+            padding: 0;
+            text-align: center;
+        }
+        &__num {
+            padding: 0;
+            text-align: center;
+        }
+    }
+}

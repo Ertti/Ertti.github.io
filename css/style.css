@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'osreg';
+  src: url('../fonts/OpenSans-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.anim {
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+button,
+a {
+  -moz-transition: all 0.2s 0.02s ease;
+  -o-transition: all 0.2s 0.02s ease;
+  -webkit-transition: all 0.2s 0.02s ease;
+}
+.osreg {
+  font-family: 'osreg';
+}
+input:focus {
+  outline: none;
+}
+a:link,
+a:target,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+body {
+  margin: 0;
+  font-family: 'osreg';
+  color: #333333;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+h1 {
+  font-weight: bold;
+  font-size: 42px;
+}
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+input {
+  height: 40px;
+  border: 1px solid #ccc;
+  padding: 5px 15px;
+}
+.wraper {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.header {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+}
+.header__logo {
+  flex: 100%;
+  padding-left: 55px;
+}
+.header__logo img {
+  max-width: 63px;
+}
+.header__time {
+  text-align: center;
+  flex: 100%;
+}
+.header__time p {
+  font-size: 14px;
+}
+.header__time p span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.header__num {
+  text-align: right;
+  flex: 100%;
+  padding-right: 55px;
+}
+.header__num p {
+  font-size: 14px;
+}
+.header__num p a {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+.header__num p a:hover {
+  color: #666;
+}
+.main__text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+.main__text p {
+  text-align: justify;
+  font-size: 16px;
+}
+@media (max-width: 600px) {
+  .header {
+    flex-wrap: wrap;
+  }
+  .header__logo {
+    padding: 0;
+    text-align: center;
+  }
+  .header__num {
+    padding: 0;
+    text-align: center;
+  }
+}

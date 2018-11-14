@@ -1,0 +1,57 @@
+.customForm {
+  border: 1px solid #ccc;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.customForm:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.customForm__input {
+  width: 30%;
+  float: left;
+  margin-left: 2%;
+  margin-bottom: 15px;
+}
+.customForm__input input {
+  width: 100%;
+}
+.customForm__input input:not(:valid) {
+  border-color: red;
+  outline: none;
+}
+.customForm__input input:not(:valid) + p {
+  display: block;
+}
+.customForm__input__error {
+  display: none;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 0;
+  color: red;
+}
+@media screen and (min-width: 1599px) {
+  .customForm__input {
+    max-width: 480px;
+    margin-left: 32px;
+  }
+}
+@media screen and (min-width: 640px) and (max-width: 1023px) {
+  .customForm__input {
+    width: 44%;
+    margin-left: 4%;
+  }
+}
+@media screen and (max-width: 639px) {
+  .customForm__input {
+    float: none;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+}
