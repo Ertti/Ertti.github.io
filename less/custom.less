@@ -1,4 +1,5 @@
 .customForm {
+    width: 100%;
     border: 1px solid #ccc;
     margin-top: 15px;
     margin-bottom: 15px;    
@@ -34,30 +35,24 @@
         }
     }
 }
-@media screen and (min-width: 1599px) {
-    .customForm {
-        &__input {
-            max-width: 480px;
-            margin-left: 32px;
-        }
+.customForm.customForm__lg {
+    .customForm__input {
+        max-width: 480px;
+        margin-left: 32px;
     }
 }
-@media screen and (min-width: 640px) and (max-width: 1023px) {
-    .customForm {
-        &__input {
-            width: 44%;
-            margin-left: 4%;
-        }
+.customForm.customForm__md {
+    .customForm__input {
+        width: 44%;
+        margin-left: 4%;
     }
 }
-@media screen and (max-width: 639px) {
-    .customForm {
-        &__input {
-            float: none;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 25px;
-        }
+.customForm.customForm__sm {
+    .customForm__input {
+        float: none;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 25px;
     }
 }

@@ -99,16 +99,78 @@ input {
 .header__num p a:hover {
   color: #666;
 }
-.main__text {
+.main {
+  display: flex;
+}
+.sitebar {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-right: 1px solid #eee;
+  width: 220px;
+}
+.content {
+  flex: 1;
+  padding-left: 15px;
+}
+.content__text {
   margin-left: auto;
   margin-right: auto;
-  max-width: 1200px;
   padding-bottom: 15px;
   padding-top: 15px;
 }
-.main__text p {
+.content__text p {
   text-align: justify;
   font-size: 16px;
+}
+.sitebar {
+  padding-right: 15px;
+}
+.sitebar__menu {
+  margin-bottom: 15px;
+}
+.sitebar__menu ul {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.sitebar__menu ul li {
+  margin-bottom: 10px;
+}
+.sitebar__menu ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  color: #333;
+}
+.sitebar__menu ul li a:hover {
+  padding-left: 5px;
+}
+.sitebar__news__title {
+  border-bottom: 1px solid #ccc;
+}
+.sitebar__news__item {
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+}
+.sitebar__news__item img {
+  width: 100%;
+}
+.sitebar__news__item a {
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  color: #333;
+}
+@media (max-width: 600px) {
+  .main {
+    flex-wrap: wrap;
+  }
+  .sitebar {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+  }
 }
 @media (max-width: 600px) {
   .header {
