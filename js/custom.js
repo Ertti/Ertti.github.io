@@ -17,7 +17,7 @@ function customResize() {
 }
 customResize()
 
-window.addEventListener('resize', function(event){
+customFormResize.addEventListener('resize', function(event){
 	customWidth = customFrom.offsetWidth;
   	customResize()
 });
